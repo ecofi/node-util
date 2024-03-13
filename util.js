@@ -579,12 +579,9 @@ exports.log = function() {
 /**
  * Encoding methods
  */
-
-exports.TextEncoder = TextEncoder;
-
-exports.TextDecoder = TextDecoder;
-
-
+const TextEncodingPolyfill = require('text-encoding');
+exports.TextEncoder = TextEncodingPolyfill.TextEncoder;
+exports.TextDecoder = TextEncodingPolyfill.TextDecoder;
 
 /**
  * Inherit the prototype methods from one constructor into another.
