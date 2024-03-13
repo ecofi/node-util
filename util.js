@@ -166,6 +166,7 @@ function inspect(obj, opts) {
 exports.inspect = inspect;
 
 
+
 // http://en.wikipedia.org/wiki/ANSI_escape_code#graphics
 inspect.colors = {
   'bold' : [1, 22],
@@ -574,6 +575,15 @@ function timestamp() {
 exports.log = function() {
   console.log('%s - %s', timestamp(), exports.format.apply(exports, arguments));
 };
+
+/**
+ * Encoding methods
+ */
+
+exports.TextEncoder = TextEncoder;
+
+exports.TextDecoder = TextDecoder;
+
 
 
 /**

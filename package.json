@@ -1,6 +1,6 @@
 {
-  "name": "util",
-  "description": "Node.js's util module for all engines",
+  "name": "@ecofi/util",
+  "description": "Fork: Node.js's util module for all engines",
   "version": "0.12.5",
   "author": {
     "name": "Joyent",
